@@ -1,0 +1,118 @@
+:root {
+  --strong: 700;
+  --reguñar: 400;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, 
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, 
+summary, time, mark, audio, video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* .container {
+  width: 10px;
+} */
+
+:root {
+  --cl-button: hsl(0, 100%, 68%);
+
+  --cl-strong: hsl(230, 29%, 20%);
+  --cl-text: hsl(230, 11%, 40%);
+  --cl-regular: hsl(231, 7%, 65%);
+  --cl-light: hsl(207, 33%, 95%);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-weight: var(--strong);
+  line-height: 39px;
+  color: hsl(230, 29%, 20%);
+  color: var(--cl-strong)
+}
+
+@media (--destop) {
+
+.title {
+    font-size: 4rem;
+    line-height: 100%
+}
+  }
+
+.subtitle,
+.subtitle--hightlight {
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-weight: var(--regular);
+  letter-spacing: 0.28em;
+  color: hsl(231, 7%, 65%);
+  color: var(--cl-regular);
+}
+
+.subtitle--hightlight {
+  font-weight: 700;
+  font-weight: var(--strong);
+  letter-spacing: 0.065em;
+  color: hsl(207, 33%, 95%);
+  color: var(--cl-light);
+}
+
+.text {
+  font-size: 1.13rem;
+  font-weight: var(--regular);
+  line-height: 26px;
+  color: hsl(230, 11%, 40%);
+  color: var(--cl-text);
+}
+
+.nav__link,
+.nav__link--login {
+  font-size: 1.19rem;
+  font-weight: 700;
+  font-weight: var(--strong);
+}
+
+.nav__link {
+  color: hsl(230, 29%, 20%);
+  color: var(--cl-strong);
+}
+
+.nav__link--login {
+  color: hsl(231, 7%, 65%);
+  color: var(--cl-regular);
+}
+
+.label,
+.btn {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: .88rem;
+}
+
+.label {
+  font-weight: var(--regular);
+  letter-spacing: 0.175em;
+  color: hsl(231, 7%, 65%);
+  color: var(--cl-regular);
+}
+
+.btn {
+  font-weight: 700;
+  font-weight: var(--strong);
+  letter-spacing: 0.065em;
+  color: hsl(207, 33%, 95%);
+  color: var(--cl-light);
+}

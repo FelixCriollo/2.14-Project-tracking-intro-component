@@ -1,0 +1,28 @@
+{
+  "name": "project-tracking-intro-component-master",
+  "description": "![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "nanoid": "^3.3.1",
+    "picocolors": "^1.0.0",
+    "source-map-js": "^1.0.2"
+  },
+  "scripts": {
+    "watch": "postcss src/css/style.css --dir public/ --watch"
+  },
+  "keywords": [],
+  "author": "iXiref",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
+    "postcss-focus": "^5.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.4.2"
+  },
+  "browserslist": [
+    "last 2 years"
+  ]
+}

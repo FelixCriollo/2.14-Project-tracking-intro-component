@@ -1,0 +1,8 @@
+:root {
+  --cl-button: hsl(0, 100%, 68%);
+
+  --cl-strong: hsl(230, 29%, 20%);
+  --cl-text: hsl(230, 11%, 40%);
+  --cl-regular: hsl(231, 7%, 65%);
+  --cl-light: hsl(207, 33%, 95%);
+}
