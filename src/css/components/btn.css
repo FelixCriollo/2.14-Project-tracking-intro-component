@@ -5,6 +5,10 @@
   border: none;
   background: url("/src/images/icon-hamburger.svg") no-repeat center center;
   transition: all .2s ease-in-out;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .nav-toggle--close {
@@ -16,4 +20,8 @@
   padding: .8em 1.75em;
   border-radius: 4px;
   margin-right: 1.4em;
+  
+  @media (min-width: 768px) {
+    padding: 1em 2em;
+  }
 }

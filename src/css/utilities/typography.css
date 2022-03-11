@@ -1,14 +1,14 @@
 .title {
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 1.7326rem + 3.2742vw, 4rem);
   font-weight: var(--strong);
   line-height: 39px;
   text-transform: uppercase;
   color: var(--cl-strong);
   padding: .6em 0 .4em 0;
-
+  
   @media (min-width: 800px) {
-    font-size: 4rem;
     line-height: 100%;
+    padding: .325em 0 .5em 0;
   }
 } 
 
