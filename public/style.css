@@ -1,6 +1,8 @@
 :root {
   --strong: 700;
-  --reguñar: 400;
+  --regular: 400;
+
+  /* --desktop: 800px; */
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
@@ -21,9 +23,19 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
-/* .container {
-  width: 10px;
-} */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(82.93%, 1108px);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 :root {
   --cl-button: hsl(0, 100%, 68%);
@@ -39,11 +51,13 @@ body {
   font-weight: 700;
   font-weight: var(--strong);
   line-height: 39px;
+  text-transform: uppercase;
   color: hsl(230, 29%, 20%);
-  color: var(--cl-strong)
+  color: var(--cl-strong);
+  padding: .6em 0 .4em 0
 }
 
-@media (--destop) {
+@media (min-width: 800px) {
 
 .title {
     font-size: 4rem;
@@ -57,26 +71,38 @@ body {
 }
 
 .subtitle {
+  font-weight: 400;
   font-weight: var(--regular);
   letter-spacing: 0.28em;
   color: hsl(231, 7%, 65%);
   color: var(--cl-regular);
+  text-transform: uppercase;
 }
 
 .subtitle--hightlight {
-  font-weight: 700;
-  font-weight: var(--strong);
-  letter-spacing: 0.065em;
+  background: hsl(230, 29%, 20%);
+  background: var(--cl-strong);
   color: hsl(207, 33%, 95%);
   color: var(--cl-light);
+
+  font-weight: 700;
+
+  font-weight: var(--strong);
+  letter-spacing: 0.065em;
+  
+  padding: 0.2em 0.6em;
+  border-radius: 15px;
+  margin-right: .5em;
 }
 
 .text {
   font-size: 1.13rem;
+  font-weight: 400;
   font-weight: var(--regular);
   line-height: 26px;
   color: hsl(230, 11%, 40%);
   color: var(--cl-text);
+  font-family: 'Barlow', sans-serif;
 }
 
 .nav__link,
@@ -84,7 +110,17 @@ body {
   font-size: 1.19rem;
   font-weight: 700;
   font-weight: var(--strong);
+  text-transform: uppercase;
+  letter-spacing: 0.035em
 }
+
+@media (min-width: 800px) {
+
+.nav__link,
+.nav__link--login {
+    font-size: 1rem
+}
+  }
 
 .nav__link {
   color: hsl(230, 29%, 20%);
@@ -100,14 +136,31 @@ body {
 .btn {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: .88rem;
+  text-transform: uppercase
 }
 
+@media (min-width: 800px) {
+
+.label,
+.btn {
+    font-size: 1rem
+}
+  }
+
 .label {
+  font-weight: 400;
   font-weight: var(--regular);
   letter-spacing: 0.175em;
   color: hsl(231, 7%, 65%);
-  color: var(--cl-regular);
+  color: var(--cl-regular)
 }
+
+@media (min-width: 800px) {
+
+.label {
+    letter-spacing: 0.285em
+}
+  }
 
 .btn {
   font-weight: 700;
@@ -115,4 +168,112 @@ body {
   letter-spacing: 0.065em;
   color: hsl(207, 33%, 95%);
   color: var(--cl-light);
+}
+
+.nav-toggle {
+  width: 24px;
+  height: 24px;
+  
+  border: none;
+  background: url("/src/images/icon-hamburger.svg") no-repeat center center;
+  transition: all .2s ease-in-out;
+}
+
+.nav-toggle--close {
+  background: url("/src/images/icon-close.svg") no-repeat center center;
+}
+
+.btn {
+  background: hsl(0, 100%, 68%);
+  background: var(--cl-button);
+  padding: .8em 1.75em;
+  border-radius: 4px;
+  margin-right: 1.4em;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  top: 100px;
+
+  height: 0;
+  width: 0;
+  overflow: hidden;
+
+  transition: all .25s ease-in-out;
+  z-index: 10
+}
+
+.nav .nav__list {
+    background: #fff;
+    padding-bottom: 1.44em;
+  }
+
+.nav .nav__item {
+    padding-top: 1.44em;
+    margin-left: 1.44em;
+    margin-right: 1.44em;
+  }
+
+.nav .nav__item--login {
+    margin-top: 1.44em;
+    border-top: 1px solid hsl(231, 7%, 65%);
+    border-top: 1px solid var(--cl-regular);
+  }
+
+.nav--active {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+
+  transition: all .25s ease-in-out;
+}
+
+.header {
+  position: relative;
+  padding: 2.44em 0;
+
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 24px;
+  height: 24px
+}
+
+.logo img {
+    width: 100%;
+  }
+
+.wrapp {
+  background: url("/src/images/bg-movile.svg") top center no-repeat;
+  background-position-x: 190px;
+
+  overflow: hidden;
+}
+
+.main {
+  padding-bottom: 5.75em;
+}
+
+.illustration {
+  position: relative;
+  height: 21.94em
+}
+
+.illustration .illustration__hero {
+    position: absolute;
+    top: 20px;
+    left: -22px;
+    height: 15.2em;
+  }
+
+.subsection {
+  display: flex;
+  align-items: center;
+  margin-top: 1.69em;
 }

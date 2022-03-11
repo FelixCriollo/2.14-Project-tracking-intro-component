@@ -1,0 +1,28 @@
+.wrapp {
+  background: url("/src/images/bg-movile.svg") top center no-repeat;
+  background-position-x: 190px;
+
+  overflow: hidden;
+}
+
+.main {
+  padding-bottom: 5.75em;
+}
+
+.illustration {
+  position: relative;
+  height: 21.94em;
+
+  & .illustration__hero {
+    position: absolute;
+    top: 20px;
+    left: -22px;
+    height: 15.2em;
+  }
+}
+
+.subsection {
+  display: flex;
+  align-items: center;
+  margin-top: 1.69em;
+}

@@ -1,6 +1,8 @@
 :root {
   --strong: 700;
-  --reguñar: 400;
+  --regular: 400;
+
+  /* --desktop: 800px; */
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
@@ -17,13 +19,19 @@ summary, time, mark, audio, video {
   box-sizing: border-box;
 }
 
-@custom-media --desktop (min-width: 800px);
-
 body {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
-/* .container {
-  width: 10px;
-} */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  width: min(82.93%, 1108px);
+  margin-inline: auto;
+}
 

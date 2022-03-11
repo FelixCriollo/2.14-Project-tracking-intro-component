@@ -1,0 +1,19 @@
+.nav-toggle {
+  width: 24px;
+  height: 24px;
+  
+  border: none;
+  background: url("/src/images/icon-hamburger.svg") no-repeat center center;
+  transition: all .2s ease-in-out;
+}
+
+.nav-toggle--close {
+  background: url("/src/images/icon-close.svg") no-repeat center center;
+}
+
+.btn {
+  background: var(--cl-button);
+  padding: .8em 1.75em;
+  border-radius: 4px;
+  margin-right: 1.4em;
+}

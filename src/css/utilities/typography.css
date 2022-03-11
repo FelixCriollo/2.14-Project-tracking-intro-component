@@ -2,9 +2,11 @@
   font-size: 2.5rem;
   font-weight: var(--strong);
   line-height: 39px;
+  text-transform: uppercase;
   color: var(--cl-strong);
+  padding: .6em 0 .4em 0;
 
-  @media (--destop) {
+  @media (min-width: 800px) {
     font-size: 4rem;
     line-height: 100%;
   }
@@ -20,12 +22,19 @@
   font-weight: var(--regular);
   letter-spacing: 0.28em;
   color: var(--cl-regular);
+  text-transform: uppercase;
 }
 
 .subtitle--hightlight {
+  background: var(--cl-strong);
+  color: var(--cl-light);
+
   font-weight: var(--strong);
   letter-spacing: 0.065em;
-  color: var(--cl-light);
+  
+  padding: 0.2em 0.6em;
+  border-radius: 15px;
+  margin-right: .5em;
 }
 
 
@@ -34,6 +43,7 @@
   font-weight: var(--regular);
   line-height: 26px;
   color: var(--cl-text);
+  font-family: 'Barlow', sans-serif;
 }
 
 
@@ -41,6 +51,12 @@
 .nav__link--login {
   font-size: 1.19rem;
   font-weight: var(--strong);
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+
+  @media (min-width: 800px) {
+    font-size: 1rem;
+  }
 }
 
 .nav__link {
@@ -56,12 +72,21 @@
 .btn {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: .88rem;
+  text-transform: uppercase;
+
+  @media (min-width: 800px) {
+    font-size: 1rem;
+  }
 }
 
 .label {
   font-weight: var(--regular);
   letter-spacing: 0.175em;
   color: var(--cl-regular);
+  
+  @media (min-width: 800px) {
+    letter-spacing: 0.285em;
+  }
 }
 
 .btn {
