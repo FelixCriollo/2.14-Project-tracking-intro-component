@@ -476,6 +476,7 @@ a {
 .attribution {
   position: absolute;
   left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
   text-align: center;
   color: hsl(231, 7%, 65%);
